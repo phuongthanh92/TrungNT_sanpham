@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
@@ -21,18 +20,6 @@ body>.wrapper{
     min-height: 100%;
     position:relative;
 }
-@font-face {
-    font-family: 'Poor Richard Regular';
-    src: url('../fonts/poorich.eot');
-    src: url('../fonts/poorich.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/poorich.woff2') format('woff2'),
-    url('../fonts/poorich.woff') format('woff'),
-    url('../fonts/poorich.ttf') format('truetype'),
-    url('../fonts/poorich.svg#poor_richardregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 ul, ol{
     margin-bottom: 0;
 }
@@ -42,7 +29,6 @@ a:hover{
 #main-header{
     overflow: hidden;
     padding-top: 15px;
-    font-family: "Roboto";
     padding-bottom: 10px;
 }
 #main-header .extend{
@@ -108,10 +94,10 @@ a:hover{
 #top-link li a{
     color: #0e557d;
     font-weight: 600;
-    font-family: "Roboto";
+    white-space: nowrap;
 }
 .navbar{
-    background: #0e557d;
+
 }
 .navbar .nav > li > a {
     color: #fff;
@@ -143,50 +129,10 @@ a:hover{
 #hot-news{
     padding: 5px;
     margin-right: 20px;
-    background: #e8e8e8;
+    background: #ffffff;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2)
 }
-#hot-news ul{
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-#hot-news ul>li{
-    padding: 10px 0 10px ;
-    list-style-type: none;
-    border-top: 1px dotted #d4d4d4;
-}
-#hot-news ul>li > a{
-    padding-left: 20px;
-    background: url("../images/icons/icons.gif");
-    background-repeat: no-repeat;
-}
-#hot-news ul>li.services-intro a{
-    background-position: 0 -272px;
 
-}
-#hot-news ul>li.how-to-buy a{
-    background-position: 0 -160px;
-}
-#hot-news ul>li.shipping a{
-    background-position: 0 -240px
-}
-#hot-news ul>li.order a{
-    background-position: 0 -208px;
-}
-#hot-news ul>li.online a{
-    background-position: 0 -176px;
-}
-#hot-news ul>li>a{
-    color: #231F20;
-    font-size: 14px;
-}
-#hot-news ul>li:hover>a{
-    color: #ff0000;
-    text-decoration: none;
-}
-#hot-news > .content-box{
-    background: #e8e8e8;
-}
 #hot-news > .title-box{
     color: #FF0000;
     text-transform: uppercase;
@@ -194,7 +140,20 @@ a:hover{
     font-size: 16px;
     padding: 10px;
     background: #e8e8e8;
-    font-family: "Roboto";
+}
+.support {
+    text-align: center;
+}
+.skype {
+    color: #015489;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+.support p {
+    color: #ff6200;
+    font-size: 14px;
 }
 #main-slider{
     background: #ffffff;
@@ -260,7 +219,6 @@ a:hover{
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-family: "Roboto";
     clear: both;
 }
 #rule ol > li{
@@ -301,7 +259,7 @@ a:hover{
 .list-items .box_title{
     padding: 10px 20px;
     position: relative;
-    background: #d9d9d9;
+    border-bottom: 1px dashed #cccccc;
     text-transform: uppercase;
     font-size: 16px;
     color: #015489;
@@ -329,16 +287,23 @@ a:hover{
 }
 .list-items .item > .content > a.title{
     color: #015489;
-    font-size: 14px;
     text-transform: uppercase;
     padding: 5px 0;
     font-weight: bold;
     display: inline-block;
-    font-family: "Roboto";
+    height: 52px;
+    overflow: hidden;
 }
 .list-items .item > .content > .price{
-    color: #000;
+    color: #a90000;
     font-weight: bold;
+}
+.list-items.line-5 .item{
+    width: 20%;
+    padding: 10px ;
+}
+.list-items.line-3 .item{
+    width: 33.33333%;
 }
 #section{
     min-height: 355px;
@@ -497,6 +462,7 @@ a:hover{
 #sidebar > .side-box{
     margin-bottom: 20px;
     background: #ffffff;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
 }
 #sidebar > .side-box > .title{
     background: #015489;
