@@ -1,6 +1,6 @@
 .navbar{
     min-height: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 .navbar-nav > li > a{
     padding-bottom: 10px ;
@@ -12,6 +12,11 @@
 }
 .navbar-nav > li.home:hover > a{
     background: url("../images/icons/red-homepage-02.png") no-repeat 10px center;
+}
+.clr-1{
+    color: #a90000;
+    font-size: 14px;
+    font-weight: bold;
 }
 /*table*/
 .table-style-01{

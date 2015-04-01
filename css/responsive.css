@@ -23,11 +23,11 @@
         clear: both;
     }
     #main-content-page .list-items .item img{
-        width: 215px;
-        height: 215px;
+        width: 122px;
+        height: 122px;
     }
-    #main-content-page .list-items .item:nth-child(3n+1){
-        clear: both;
+    #main-content-page .list-items .item{
+        overflow: hidden;
     }
     #main-content-page .list-items .item:nth-child(5n+1){
         clear: none;
@@ -36,7 +36,7 @@
         padding-left: 10px;
     }
     #detail-product > .thumb{
-        max-width: 50%;
+        max-width: 35%;
     }
     #detail-product > .info textarea{
         width: 210px;

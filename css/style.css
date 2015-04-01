@@ -305,6 +305,9 @@ a:hover{
 .list-items.line-3 .item{
     width: 33.33333%;
 }
+.list-items.line-4 .item{
+    width: 25%;
+}
 #section{
     min-height: 355px;
 }
@@ -467,7 +470,7 @@ a:hover{
 #sidebar > .side-box > .title{
     background: #015489;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
@@ -486,7 +489,7 @@ a:hover{
 #main-content-page > .title{
     background: #015489;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
@@ -496,7 +499,6 @@ a:hover{
 }
 #detail-product{
     background: #ffffff;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
     padding: 20px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -504,6 +506,10 @@ a:hover{
 #detail-product > .thumb{
     float: left;
     margin-right: 20px;
+}
+#detail-product > .thumb > .list-image{
+    margin-top: 10px;
+    text-align: center;
 }
 #detail-product > .info{
     overflow: hidden;
@@ -518,10 +524,11 @@ a:hover{
 #detail-product > .info label{
     min-width: 100px;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
 #detail-product > .info > .quantity > input{
     width: 40px;
+    margin-left: 2px;
     padding: 5px 10px ;
     border: 1px solid #dddddd;
 }
@@ -534,6 +541,10 @@ a:hover{
     margin-bottom: 10px;
     display: table;
 }
+#detail-product > .info > button{
+    margin-left: 102px;
+    font-size: 16px;
+}
 #detail-product .detail{
     clear: both;
     padding-top: 20px;
@@ -544,4 +555,63 @@ a:hover{
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
+}
+#sidebar .sub-category > .sub li{
+    background: url("../images/icons/breadcrumb-03.png") no-repeat left center;
+}
+#sidebar .dropdown .dropdown-menu{
+    top: 0;
+    left: 100%;
+    padding: 0;
+}
+#sidebar .dropdown .dropdown-menu li{
+    border-bottom: none;
+}
+#sidebar .dropdown .dropdown-menu li:hover{
+    background: #015489;
+}
+#sidebar .dropdown .dropdown-menu li a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #015489;
+    padding: 0;
+}
+#sidebar .dropdown .dropdown-menu li:hover a{
+    background: none;
+    color: #ffffff;
+}
+#sidebar .dropdown:hover .dropdown-menu{
+    display: block;
+    top: 0;
+}
+#filter-box{
+    padding-top: 20px;
+    color: #000000;
+    overflow: hidden;
+    background: #ffffff;
+    border-bottom: 1px dashed #d9d9d9;
+}
+#filter-box .label{
+    color: #000000;
+    font-size: 12px;
+}
+#main-content-page{
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+    background: #ffffff;
+}
+#main-content-page .list-items{
+    box-shadow: none;
+}
+#filter-box .group{
+    padding-bottom: 15px;
+}
+.group .label {
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.group input, .group select, .group textarea{
+    padding: 5px 10px;
+    border: 1px solid #d9d9d9;
+    width: 100%;
 }
