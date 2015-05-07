@@ -14,6 +14,9 @@ $(document).ready(function(){
                 display:"block"
             });
         })
+    });
+    $(window).scroll(function(){
+        t = parseInt($(window).scrollTop()) + 10;
+        $('.banner').stop().animate({marginTop:t},500);
     })
-
 })

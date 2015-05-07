@@ -41,6 +41,10 @@
     #detail-product > .info textarea{
         width: 210px;
     }
+    /*update index_v2*/
+    #wrapper-boxes{
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 677px){
